@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #131516;
+    z-index: 5;
+  }
+
+  body {
+    min-width: 1440px;
+    height: 4241px;
+    overflow-x: hidden; /* Скрываем горизонтальный скролл */
+    overflow-y: auto; /* Включаем вертикальный скролл */
+}
+
+  body {
+    width: 1440px; /* Ширина страницы */
+    height: 4241px; /* Высота страницы */
+    margin: 0 auto;
+    scrollbar-color: black;
+  }
+  
+  header {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.52px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+  
+  header .container{
+    width: 1200px;
+    height: 37px;
+    z-index: 2;
+}
+  
+  header .logo {
+    width: 220px;
+    height: 30px;
+    position: absolute;
+    top: 60px;
+    left: 120px;
+    background-color: alpha($color: #00000000);
+}
+  
+  header ul.nav-menu li {
+    display: inline;
+    padding: 3px;
+    margin-right: 30px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+  }
+
+  a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+
+  a.active {
+    color: #00FFA3;
+    text-decoration: underline;
+  }
+
+  .first-group {
+    position: absolute;
+    top: 67px;
+    left: 530px;
+}
+
+  .second-group {
+    position: absolute;
+    top: 67px;
+    left: 988px;
+    background-color: alpha($color: #00000000);
+}
+
+  footer {
+    padding: 10px;
+    position: absolute;
+    top: 4009px;
+    left: 120px;
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: center;
+    color: white;
+  }
+
+  .wrapper {
+    width: 1280px;
+    margin: 60px auto;
+  }
+
+//   stickyheader .sticky-header {
+//     visibility: visible;
+//   }
+
+//   stickyheader .sticky-header.fixed {
+//     visibility: hidden;
+//   }
+
+
+
+
+
+// Main page
+
+body *{
+  background-color: transparent;
+}
+
+
+.pixels1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.pixels2 {
+  position: absolute;
+  left: 0;
+  top: 770px;
+  z-index: 1;
+}
+
+body .bg-pic-1 {
+    
+    opacity: 0.3;
+    background-size: cover;
+    position: absolute;
+    z-index: 0;
+    top: 100px;
+    left: 100px;
+    width: 766px;
+    height: 800px;
+    background-image: url('./img/bg-pic-1.png');
+  }
+
+  body .bg-pic-2 {
+    
+    opacity: 0.3;
+    background-size: cover;
+    position: absolute;
+    z-index: 0;
+    top: 2067px;
+    left: 700px;
+    width: 766px;
+    height: 100%;
+    background-image: url('./img/bg-pic-2.png');
+  }
+
+body .top {
+    .slogan {
+        font-family: Noto Sans;
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 68.1px;
+        text-align: left;
+        color: white;
+        width: 688px;
+        position: absolute;
+        left: 120px;
+        top: 257px;
+    }
+}
+
+
+body {
+  .flow-arrows {
+    background-color: transparent;
+    position: absolute;
+    top: 423px;
+    left: 120px;
+      font-family: Noto Sans;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32.69px;
+      letter-spacing: 0.02em;
+      text-align: left;
+      z-index: 6;
+      color: white;
+
+  #flow {
+    background-color: transparent;
+    display: flex;
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0;
+    margin: 0;
+  }
+  
+  #flow li {
+    display: flex;
+    align-items: center;
+    margin-right: 30px; /* Расстояние между пунктами списка */
+  }
+  
+  #flow li p {
+    margin: 0;
+  }
+  
+  #flow li svg {
+    margin: 0;
+  }
+}
+}
+
+body .blue-text {
+  font-family: Noto Sans;
+  font-size: 72px;
+  font-weight: 200;
+  line-height: 98.06px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #000AFF;
+  opacity: 0.3;
+  position: absolute;
+  top: 120px;
+  left: 735px;
+  z-index: 1;
+}
+
+body .points {
+  /* Group 26 */
+  width: 482px;
+  height: 100px;
+
+  margin: 0;
+  padding: 0;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  position: absolute;
+  top: 575px;
+  left: 120px;
+}
+
+body .black-block {
+  width: 1380px;
+  height: 410px;
+  background-color: black;
+  position: absolute;
+  top: 930px;
+  left: 0;
+
+  .first-row {
+    position: absolute;
+    top: 60px;
+    left: 120px;
+  }
+
+  .second-row {
+    position: absolute;
+    top: 235px;
+    left: 120px;
+  }
+
+  .first-row ul.service li,
+  .second-row ul.service li {
+    display: inline-block;
+    width: 278px;
+    vertical-align: top;
+    margin-right: 30px;
+
+      p.stitle {
+        height: 33px;
+        font-family: Noto Sans;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32.69px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #00FFA3;
+
+      }
+
+      .break {
+        height: 16px;
+      }
+
+      p.text {
+        height: 66px;
+        font-family: Noto Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.79px;
+        text-align: left;
+        color: white;
+      }
+  }
+
+  .consult {
+    position: absolute;
+    top: 235.5px;
+    left: 735px;
+    #consult-text {
+      font-family: Noto Sans;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32.69px;
+      letter-spacing: 0.02em;
+      text-align: left;
+      color: #000AFF;
+      width: 222px;
+      height: 33px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    #arrow {
+      position: absolute;
+      top: 66px;
+      left: 0;
+    }
+    button {
+
+      /* Inside auto layout */
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+      
+      /* Свяжитесь с нами */
+      position: absolute;
+      width: 173px;
+      height: 25px;
+      left: calc(50% - 173px/2 + 1px);
+      top: calc(50% - 25px/2 - 0.5px);
+      
+      /* BUTTONS */
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      /* identical to box height */
+      text-align: center;
+      letter-spacing: 0.02em;
+      
+      /* White */
+      color: #FFFFFF;
+      
+      /* Rectangle 228 */
+      
+      box-sizing: border-box;
+      
+      position: absolute;
+      left: 308px;
+      top: 54px;
+      margin: 0;
+      width: 277px;
+      height: 60px;
+      
+      /* White */
+      border: 2px solid #FFFFFF;
+
+    }
+
+    button:hover {
+      border: 2px solid #00FFA3;
+      a {
+        color: #00FFA3;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+body .slider {
+  position: absolute;
+  width: 1610px;
+  height: 410px;
+  margin: 60px;
+  padding: 60px;
+  top: 1400px;
+  left: 60px;
+  background-color: black;
+  color: white;
+}
+
+body #text-block {
+  position: absolute;
+  top: 2157px;
+  left: 120px;
+  width: 1098px;
+  height: 330px;
+  color: white;
+  p#bigger {
+    width: 380px;
+    height: 264px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: Noto Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.69px;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+  p#smaller {
+    width: 585px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: left;
+  }
+}
+
+body .pics {
+  img {position: absolute;
+  top: 2607px;
+  left: 0;
+  width: 910px;
+  height: 910px;}
+}
+
+body .anek{
+  width: 100%;
+  height: 50%;
+  p.text1 {
+  height: 66px;
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.79px;
+  text-align: left;
+  color: white;
+}
+}
