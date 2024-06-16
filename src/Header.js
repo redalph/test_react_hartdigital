@@ -1,13 +1,26 @@
 import React from 'react'
-//import useState from 'react'
+import {useState} from 'react'
 import { NavLink } from 'react-router-dom'
 
 export default function Header(){
+
+    const[header, setHeader] = useState(false);
+
+    const stickyHeader = () => {
+        if (window.scrollY >= 70) {
+            setHeader(true)
+        } else {
+            setHeader(false)
+        }
+    }
+
+    window.addEventListener('scroll', stickyHeader);
+
     return(
-        <header className="header">
+        <header className={header ? 'header active' : 'header'}>
             <div className="container">
                 <a href="/">
-                    <div><svg width="220" height="31" viewBox="0 0 220 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div className='logo'><svg width="220" height="31" viewBox="0 0 220 31" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M48.6702 9.96401L48.6711 9.96444C49.6871 10.4276 50.4803 11.0808 51.0631 11.9248L51.0639 11.926C51.6363 12.75 51.9315 13.7391 51.9315 14.916V29.1697H49.2383V15.653C49.2383 14.2885 48.7666 13.1796 47.7818 12.3962C46.8256 11.6356 45.607 11.2782 44.165 11.2782C43.1917 11.2782 42.2664 11.4358 41.3957 11.7575C40.5096 12.0849 39.7793 12.5872 39.2175 13.2663L39.216 13.2682C38.6325 13.9806 38.3548 14.866 38.3548 15.8923V29.1697H35.6808V0.5H38.275V12.0588V13.8492L39.2027 12.3178C39.518 11.7973 39.946 11.3008 40.4968 10.8301C41.031 10.3737 41.6901 9.99679 42.4838 9.70011C43.2553 9.41177 44.1646 9.2615 45.2238 9.2615C46.5061 9.2615 47.6519 9.49718 48.6702 9.96401Z" fill="white" stroke="white"/>
 <path d="M59.0034 4.14747V1.31396H61.7764V4.14747H59.0034Z" fill="white" stroke="white"/>
 <path d="M59.1245 29.1643V9.52002H61.6968V29.1643H59.1245Z" fill="white" stroke="white"/>
@@ -38,7 +51,7 @@ export default function Header(){
 <path d="M149.655 29.1644V26.7241H158.978V29.1644H149.655Z" fill="white" stroke="white"/>
 <path d="M163.418 29.1644V26.7241H165.858V29.1644H163.418Z" fill="white" stroke="white"/>
 </svg>
-</div>
+            </div>
                 </a>
 
                 <ul className="nav-menu">
@@ -51,11 +64,12 @@ export default function Header(){
                     <nav  className="second-group">
                     <li><NavLink to="/contacts" className={({ isActive }) => isActive ? 'active' : ''} end>Контакты</NavLink></li>           
                     <li><NavLink to="/vacancies" className={({ isActive }) => isActive ? 'active' : ''} end>Вакансии</NavLink></li>
-                    <li><NavLink to="/news" className={({ isActive }) => isActive ? 'active' : ''} end>Новости</NavLink></li>
+                    <li id='removable'><NavLink to="/news" className={({ isActive }) => isActive ? 'active' : ''} end>Новости</NavLink></li>
                     </nav>
                 </ul>
                 </div>
 
         </header>
+
     )
 }

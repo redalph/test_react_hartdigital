@@ -42,7 +42,6 @@
     position: absolute;
     top: 60px;
     left: 120px;
-    background-color: alpha($color: #00000000);
 }
   
   header ul.nav-menu li {
@@ -98,15 +97,42 @@
     margin: 60px auto;
   }
 
-//   stickyheader .sticky-header {
-//     visibility: visible;
-//   }
+// Header when scroll
+header.active {
+  .container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1440px;
+    height: 97px;
+    background-color: #000000;
+    padding: 0;
+    margin-left: 120px;
+    z-index: 8;
+    .logo {
+      width: 220px;
+      height: 30px;
+      position: absolute;
+      top: 37px;
+      left: 0;
+    }
+  }
 
-//   stickyheader .sticky-header.fixed {
-//     visibility: hidden;
-//   }
-
-
+  
+  .first-group{
+    position: absolute;
+    top: 37px;
+    left: 410px;
+  }
+  .second-group{ 
+    position: absolute;
+    top: 37px;
+    left: 980px;
+    #removable {
+      visibility: hidden;
+    }
+  }
+}
 
 
 

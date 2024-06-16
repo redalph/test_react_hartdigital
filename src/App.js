@@ -9,7 +9,6 @@ import Service from './Service'
 import Contacts from './Contacts'
 import Vacancies from './Vacancies'
 import News from './News'
-//import StickyHeader from './StickyHeader'
 
 import './styles.scss'
 
